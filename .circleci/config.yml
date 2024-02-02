@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/node:20.11.0
+      - image: selenium/standalone-chrome:121.0.0
     steps:
       - checkout
       - run: npm install --save-dev nightwatch@1.7.2
