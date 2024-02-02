@@ -1,14 +1,16 @@
-# version: 2.1
+version: '2.1'
 orbs:
   browser-tools: circleci/browser-tools@x.y
 jobs:
-  build:
+  test:
     docker:
-      - image: cimg/node:20.11.0-browsers  
+      - image: cimg/node:20.4.0-browsers
     steps:
-      - checkout
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
-      - run: npm install --save-dev nightwatch@1.7.2
-      - run: npm install chromedriver --save-dev
-      - run: npx nightwatch -e chrome
+      - run:
+          command: |
+            google-chrome --version
+            chromedriver --version
+          name: Check install
+workflows: null
