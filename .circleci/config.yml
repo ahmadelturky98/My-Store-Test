@@ -13,4 +13,12 @@ jobs:
             google-chrome --version
             chromedriver --version
           name: Check install
-workflows: null
+build:
+    docker:
+      - image: cimg/node:20.11.0-browsers  
+    steps:
+      - checkout
+      - run: npm install --save-dev nightwatch@1.7.2
+      - run: npm install chromedriver --save-dev
+      - run: npx nightwatch -e chrome
+
