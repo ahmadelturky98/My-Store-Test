@@ -21,4 +21,4 @@ jobs:
       - run: npm install --save-dev nightwatch@1.7.2
       - run: npm install chromedriver --save-dev
       - run: npx nightwatch -e chrome
-
+ 
