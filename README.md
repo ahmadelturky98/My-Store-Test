@@ -1,3 +1,4 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/VxmG3kCnzAFfKtDjdSYEXm/5zQqDuKw15qno1qzGDrutN/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/VxmG3kCnzAFfKtDjdSYEXm/5zQqDuKw15qno1qzGDrutN/tree/main
 My Store Test
 
 * COMBINATION TEST (TEST1)
